@@ -19,15 +19,15 @@ export interface SplitResult {
   totalMinor: number;
   shares: Share[];
 }
-
 export type MoneyErrorCode = 
+  | 'INVALID_PARTICIPANTS'
+  | 'INVALID_CUSTOM_AMOUNTS'
+  | 'SUM_MISMATCH'
+  | 'UNSUPPORTED_SPLIT'
   | 'INVALID_AMOUNT'
-  | 'INVALID_PARTIES'
-  | 'INVALID_RATE'
-  | 'INVALID_WEIGHTS'
-  | 'INVALID_PARTICIPANT'
-  | 'INVALID_ASSIGNMENT'
-  | 'SPLIT_MISMATCH';
+  | 'INVALID_MINOR_AMOUNT'
+  | string;
+
 
 export class MoneyError extends Error {
   constructor(
