@@ -1,0 +1,22 @@
+{
+  "name": "ecotap-backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/maylandseby/ecotap-backend#readme",
+  "bugs": {
+    "url": "https://github.com/maylandseby/ecotap-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maylandseby/ecotap-backend.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
+}
